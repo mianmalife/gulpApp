@@ -40,7 +40,6 @@
     "npm": {
       "publish": false
     },
-    "preset": "angular",
     "plugins": {
       "@release-it/conventional-changelog": {
         "preset": "angular",
