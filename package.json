@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
+    "@release-it/conventional-changelog": "^5.1.0",
     "dotenv": "^16.0.2",
     "dotenv-cli": "^6.0.0",
     "execa": "5.1.1",
@@ -38,6 +39,17 @@
     },
     "npm": {
       "publish": false
+    },
+    "preset": "angular",
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md",
+        "strictSemVer": true
+      }
+    },
+    "git": {
+      "commitMessage": "chore(tag): release v${version}"
     }
   }
 }
