@@ -1,0 +1,1 @@
+const extraFunction = () => 'extra...'
