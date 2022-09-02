@@ -1,5 +1,12 @@
 
 
+# [1.2.0](https://github.com/mianmalife/gulpApp/compare/v1.1.0...v1.2.0) (2022-09-02)
+
+
+### Features
+
+* 新增husky提交校验commit格式 ([d5a336a](https://github.com/mianmalife/gulpApp/commit/d5a336aee1ee622ae65352bec406d9842a5218d5))
+
 ## [1.1.1](https://github.com/mianmalife/gulpApp/compare/v1.1.0...v1.1.1) (2022-09-02)
 
 # [1.1.0](https://github.com/mianmalife/gulpApp/compare/v1.0.8...v1.1.0) (2022-09-02)
