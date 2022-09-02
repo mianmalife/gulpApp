@@ -8,4 +8,4 @@ const helloworld = () => {
 }
 
 const h = helloworld()
-console.log(h.get('React'))
+console.log(h.get('Vue'))
