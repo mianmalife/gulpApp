@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "rimraf dist && gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "dotenv release-it"
+    "release": "dotenv release-it",
+    "commit": "git cz"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
     "@release-it/conventional-changelog": "^5.1.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "dotenv": "^16.0.2",
     "dotenv-cli": "^6.0.0",
     "execa": "5.1.1",
@@ -49,6 +52,11 @@
     },
     "git": {
       "commitMessage": "chore(tag): release v${version}"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
