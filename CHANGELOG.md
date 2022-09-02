@@ -1,5 +1,7 @@
 
 
+## [1.1.1](https://github.com/mianmalife/gulpApp/compare/v1.1.0...v1.1.1) (2022-09-02)
+
 # [1.1.0](https://github.com/mianmalife/gulpApp/compare/v1.0.8...v1.1.0) (2022-09-02)
 
 
