@@ -1,5 +1,12 @@
 
 
+### [1.2.4-0](https://github.com/mianmalife/gulpApp/compare/v1.2.3...v1.2.4-0) (2022-09-03)
+
+
+### Ci
+
+* test commitlint ([d4227d1](https://github.com/mianmalife/gulpApp/commit/d4227d12b52eaa1a32e8df19bd8bcb9f170df122))
+
 ## <small>1.2.3 (2022-09-03)</small>
 
 * ci: test commitlint ([e2ae8e7](https://github.com/mianmalife/gulpApp/commit/e2ae8e7))
