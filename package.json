@@ -50,6 +50,7 @@
     "plugins": {
       "@release-it/conventional-changelog": {
         "infile": "CHANGELOG.md",
+        "ignoreRecommendedBump": true,
         "strictSemVer": true,
         "types": [
           {
