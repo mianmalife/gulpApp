@@ -1,5 +1,12 @@
 
 
+### [1.2.5](https://github.com/mianmalife/gulpApp/compare/v1.2.4...v1.2.5) (2022-09-03)
+
+
+### test
+
+* test commitlint feat: test feat ([ccd847c](https://github.com/mianmalife/gulpApp/commit/ccd847ce5c8807edec8e7c8610c57bc4b4fddeec))
+
 ### [1.2.4](https://github.com/mianmalife/gulpApp/compare/v1.2.4-0...v1.2.4) (2022-09-03)
 
 
