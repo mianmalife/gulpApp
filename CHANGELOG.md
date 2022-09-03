@@ -1,5 +1,12 @@
 
 
+### [1.2.6](https://github.com/mianmalife/gulpApp/compare/v1.2.5...v1.2.6) (2022-09-03)
+
+
+### chore
+
+* **readme:** readme ([13b4460](https://github.com/mianmalife/gulpApp/commit/13b4460e16b69a1c5cd81350771f0bd31a714c9a))
+
 ### [1.2.5](https://github.com/mianmalife/gulpApp/compare/v1.2.4...v1.2.5) (2022-09-03)
 
 
