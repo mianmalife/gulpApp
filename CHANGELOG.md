@@ -1,5 +1,12 @@
 
 
+### [1.2.4](https://github.com/mianmalife/gulpApp/compare/v1.2.4-0...v1.2.4) (2022-09-03)
+
+
+### Revert
+
+* test commitlint revert msg ([7820f7e](https://github.com/mianmalife/gulpApp/commit/7820f7ea56fa789e75111439cc6c5f1711e26516))
+
 ### [1.2.4-0](https://github.com/mianmalife/gulpApp/compare/v1.2.3...v1.2.4-0) (2022-09-03)
 
 
