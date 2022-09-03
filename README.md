@@ -1,3 +1,3 @@
 # gulpApp
 
-gulp
+gulp app
