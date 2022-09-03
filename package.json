@@ -104,7 +104,7 @@
       }
     },
     "git": {
-      "commitMessage": "chore(tag): release v${version}"
+      "commitMessage": "v${version}"
     }
   },
   "config": {
