@@ -1,5 +1,18 @@
 
 
+### [1.2.7](https://github.com/mianmalife/gulpApp/compare/v1.2.6...v1.2.7) (2022-09-03)
+
+
+### test
+
+* commit ([bf224d7](https://github.com/mianmalife/gulpApp/commit/bf224d7ce6e1242db843b0d8aceae26e13b5df34))
+* ommitlint ([23d9d2b](https://github.com/mianmalife/gulpApp/commit/23d9d2be7402968fc5ec616c40f64d58186f795c))
+
+
+### Ci
+
+* ci update ([d2aa2c9](https://github.com/mianmalife/gulpApp/commit/d2aa2c994eb230494871f5b4ed812a35ee547fff))
+
 ### [1.2.6](https://github.com/mianmalife/gulpApp/compare/v1.2.5...v1.2.6) (2022-09-03)
 
 
