@@ -1,3 +1,3 @@
 # gulpApp
 
-gulp app
+gulp app learn
