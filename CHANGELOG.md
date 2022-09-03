@@ -1,5 +1,12 @@
 
 
+### [1.2.8](https://github.com/mianmalife/gulpApp/compare/v1.2.7...v1.2.8) (2022-09-03)
+
+
+### Ci
+
+* ci update tagName ([bd87d4b](https://github.com/mianmalife/gulpApp/commit/bd87d4b5adcc6050cb9a9df382aa53dce01fb157))
+
 ### [1.2.7](https://github.com/mianmalife/gulpApp/compare/v1.2.6...v1.2.7) (2022-09-03)
 
 
