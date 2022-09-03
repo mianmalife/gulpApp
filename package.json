@@ -94,6 +94,10 @@
             {
               "type": "ci",
               "section": "Ci"
+            },
+            {
+              "type": "revert",
+              "section": "Revert"
             }
           ]
         }
