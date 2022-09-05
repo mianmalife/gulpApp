@@ -1,64 +1,43 @@
-const fs = require("fs");
-const { series, parallel, src, dest, watch } = require("gulp"); // series 顺序执行 parallel 并发执行
-const babel = require("gulp-babel");
+const gulp = require("gulp");
+const browserify = require("browserify");
+const source = require("vinyl-source-stream");
+const tsify = require("tsify");
+const watchify = require("watchify");
+const fancyLog = require("fancy-log");
+const sourcemaps = require("gulp-sourcemaps");
+const buffer = require("vinyl-buffer");
 const uglify = require("gulp-uglify");
-const rename = require("gulp-rename");
 
-function clean(cb) {
-  console.log("clean");
-  cb();
-}
+gulp.task("index-html", function () {
+  return gulp.src("src/index.html").pipe(gulp.dest("dist"));
+});
 
-function css(cb) {
-  console.log("css");
-  cb();
-}
-
-function javascript(cb) {
-  console.log("js");
-  src("src/**/*.js")
-    .pipe(
-      babel({
-        presets: ["@babel/preset-env"],
-      })
-    )
-    .pipe(dest("dist"))
-    .pipe(uglify())
-    .pipe(rename({ extname: ".min.js" }))
-    .pipe(dest("dist"));
-  cb();
-}
-
-async function AsyncTask() {
-  const { version } = JSON.parse(fs.readFileSync("./package.json", "utf-8"));
-  console.log(version);
-  await Promise.resolve("async task");
-}
-
-function PromiseTest() {
-  return Promise.resolve("Promise Test");
-}
-
-function build(cb) {
-  console.log("build");
-  cb();
-}
-
-function watchTaks() {
-  watch("src/**/*.js", function (cb) {
-    console.log("watch update...");
-    cb();
-  });
-}
-
-// clean 公共任务
-// css, javascript, build 私有任务
-exports.clean = clean;
-exports.default = series(
-  clean,
-  parallel(css, javascript),
-  build,
-  PromiseTest,
-  AsyncTask,
-  watchTaks
+const watchBrowserify = watchify(
+  browserify({
+    basedir: ".",
+    debug: true,
+    entries: ["src/index.ts"],
+    cache: {},
+    packageCache: {},
+  })
+    .plugin(tsify)
+    .transform("babelify", {
+      presets: ["@babel/preset-env"],
+      extensions: [".ts"],
+    })
 );
+
+function bundle() {
+  return watchBrowserify
+    .bundle()
+    .on("error", fancyLog)
+    .pipe(source("bundle.js"))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(uglify())
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest("dist"));
+}
+gulp.task("default", gulp.series(gulp.parallel("index-html"), bundle));
+watchBrowserify.on("update", bundle);
+watchBrowserify.on("log", fancyLog);
